@@ -1,0 +1,426 @@
+
+Setting environment for using XAMPP for Windows.
+ASUS@LAPTOPRAFID d:\XAMPP
+# mysql -u root
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 10
+Server version: 10.4.32-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> create database db_tka2026;
+Query OK, 1 row affected (0.002 sec)
+
+MariaDB [(none)]> use db_tka2026;
+Database changed
+MariaDB [db_tka2026]> create table nilai_tka2026;
+ERROR 1113 (42000): A table must have at least 1 column
+MariaDB [db_tka2026]> create table nilai_tka2026(
+    -> id int primary key auto_increment,
+    -> nis int not null,
+    -> nama varchar(50) not null,
+    -> jurusan varchar(50) not null,
+    -> kelas varchar(20) not null,
+    -> b_indo double not null,
+    -> matematika double not null,
+    -> b_inggris double not null,
+    -> pilihan1 double not null,
+    -> pilihan2 double not null);
+Query OK, 0 rows affected (0.028 sec)
+
+MariaDB [db_tka2026]> insert into nilai_tka2026 (nis, nama, jurusan, kelas, b_indo, matematika, b_inggris, pilihan1, pilihan2) values(25001, 'Andi', 'rpl', 'XII', 78, 85, 80, 82, 79);
+Query OK, 1 row affected (0.021 sec)
+
+MariaDB [db_tka2026]> insert into nilai_tka2026 (nis, nama, jurusan, kelas, b_indo, matematika, b_inggris, pilihan1, pilihan2) values(25002, 'Budi', 'tkj', 'XII', 70, 75, 72, 74, 71);
+Query OK, 1 row affected (0.022 sec)
+
+MariaDB [db_tka2026]> insert into nilai_tka2026 (nis, nama, jurusan, kelas, b_indo, matematika, b_inggris, pilihan1, pilihan2) values(25003, 'Joko', 'sija', 'XII', 88, 90, 85, 89, 87);
+Query OK, 1 row affected (0.020 sec)
+
+MariaDB [db_tka2026]> insert into nilai_tka2026 (nis, nama, jurusan, kelas, b_indo, matematika, b_inggris, pilihan1, pilihan2) values(25004, 'Dewi', 'dkv', 'XII', 92, 78, 88, 90, 91);
+Query OK, 1 row affected (0.007 sec)
+
+MariaDB [db_tka2026]> insert into nilai_tka2026 (nis, nama, jurusan, kelas, b_indo, matematika, b_inggris, pilihan1, pilihan2) values(25005, 'Eko', 'tkp', 'XII', 65, 70, 68, 67, 69);
+Query OK, 1 row affected (0.019 sec)
+
+MariaDB [db_tka2026]> insert into nilai_tka2026 (nis, nama, jurusan, kelas, b_indo, matematika, b_inggris, pilihan1, pilihan2) values(25006, 'Fajar', 'dpib', 'XII', 73, 76, 74, 75, 72);
+Query OK, 1 row affected (0.019 sec)
+
+MariaDB [db_tka2026]> insert into nilai_tka2026 (nis, nama, jurusan, kelas, b_indo, matematika, b_inggris, pilihan1, pilihan2) values(25007, 'Gina', 'tp', 'XII', 60, 82, 81, 83, 84);
+Query OK, 1 row affected (0.019 sec)
+
+MariaDB [db_tka2026]> insert into nilai_tka2026 (nis, nama, jurusan, kelas, b_indo, matematika, b_inggris, pilihan1, pilihan2) values(25008, 'Nia', 'tflm', 'XII', 69, 72, 70, 71, 73);
+Query OK, 1 row affected (0.019 sec)
+
+MariaDB [db_tka2026]> insert into nilai_tka2026 (nis, nama, jurusan, kelas, b_indo, matematika, b_inggris, pilihan1, pilihan2) values(25009, 'Indah', 'toi', 'XII', 85, 88, 86, 87, 89);
+Query OK, 1 row affected (0.020 sec)
+
+MariaDB [db_tka2026]> insert into nilai_tka2026 (nis, nama, jurusan, kelas, b_indo, matematika, b_inggris, pilihan1, pilihan2) values(24001, 'Citra', 'tkr', 'XIII', 74, 78, 75, 77, 76);
+Query OK, 1 row affected (0.019 sec)
+
+MariaDB [db_tka2026]> insert into nilai_tka2026 (nis, nama, jurusan, kelas, b_indo, matematika, b_inggris, pilihan1, pilihan2) values(24002, 'Kiki', 'rpl', 'XIII', 90, 92, 91, 93, 94);
+Query OK, 1 row affected (0.019 sec)
+
+MariaDB [db_tka2026]> insert into nilai_tka2026 (nis, nama, jurusan, kelas, b_indo, matematika, b_inggris, pilihan1, pilihan2) values(24003, 'Lina', 'tkj', 'XIII', 82, 80, 83, 90, 78);
+Query OK, 1 row affected (0.019 sec)
+
+MariaDB [db_tka2026]> insert into nilai_tka2026 (nis, nama, jurusan, kelas, b_indo, matematika, b_inggris, pilihan1, pilihan2) values(24004, 'Mira', 'sija', 'XIII', 76, 79, 78, 77, 80);
+Query OK, 1 row affected (0.019 sec)
+
+MariaDB [db_tka2026]> insert into nilai_tka2026 (nis, nama, jurusan, kelas, b_indo, matematika, b_inggris, pilihan1, pilihan2) values(24005, 'Hadi', 'dkv', 'XIII', 88 85, 87, 86, 89);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '85, 87, 86, 89)' at line 1
+MariaDB [db_tka2026]> insert into nilai_tka2026 (nis, nama, jurusan, kelas, b_indo, matematika, b_inggris, pilihan1, pilihan2) values(24005, 'Hadi', 'dkv', 'XIII', 88, 85, 87, 86, 89);
+Query OK, 1 row affected (0.004 sec)
+
+MariaDB [db_tka2026]> insert into nilai_tka2026 (nis, nama, jurusan, kelas, b_indo, matematika, b_inggris, pilihan1, pilihan2) values(24006, 'Oki', 'tkp', 'XIII', 68, 50, 67, 66, 69);
+Query OK, 1 row affected (0.021 sec)
+
+MariaDB [db_tka2026]> insert into nilai_tka2026 (nis, nama, jurusan, kelas, b_indo, matematika, b_inggris, pilihan1, pilihan2) values(24007, 'Putri', 'dpib', 'XIII', 79, 81, 80, 82, 83);
+Query OK, 1 row affected (0.019 sec)
+
+MariaDB [db_tka2026]> insert into nilai_tka2026 (nis, nama, jurusan, kelas, b_indo, matematika, b_inggris, pilihan1, pilihan2) values(24008, 'Raka', 'tp', 'XIII', 84, 86, 85, 87, 88);
+Query OK, 1 row affected (0.020 sec)
+
+MariaDB [db_tka2026]> insert into nilai_tka2026 (nis, nama, jurusan, kelas, b_indo, matematika, b_inggris, pilihan1, pilihan2) values(24009, 'Sinta', 'tflm', 'XIII', 71, 73, 72, 74, 75);
+Query OK, 1 row affected (0.019 sec)
+
+MariaDB [db_tka2026]> insert into nilai_tka2026 (nis, nama, jurusan, kelas, b_indo, matematika, b_inggris, pilihan1, pilihan2) values(24010, 'Toni', 'toi', 'XIII', 77, 79, 78, 80, 81);
+Query OK, 1 row affected (0.019 sec)
+
+MariaDB [db_tka2026]> insert into nilai_tka2026 (nis, nama, jurusan, kelas, b_indo, matematika, b_inggris, pilihan1, pilihan2) values(24011, 'Zaky', 'tkr', 'XIII', 69, 70, 68, 71, 72);
+Query OK, 1 row affected (0.002 sec)
+
+MariaDB [db_tka2026]> insert into nilai_tka2026 (nis, nama, jurusan, kelas, b_indo, matematika, b_inggris, pilihan1, pilihan2) values(24012, 'Vina', 'rpl', 'XIII', 91, 93, 92, 94, 95);
+Query OK, 1 row affected (0.020 sec)
+
+MariaDB [db_tka2026]> insert into nilai_tka2026 (nis, nama, jurusan, kelas, b_indo, matematika, b_inggris, pilihan1, pilihan2) values(25010, 'Wawan', 'tkj', 'XIII', 75, 77, 76, 78, 79);
+Query OK, 1 row affected (0.002 sec)
+
+MariaDB [db_tka2026]> insert into nilai_tka2026 (nis, nama, jurusan, kelas, b_indo, matematika, b_inggris, pilihan1, pilihan2) values(25011, 'Yani', 'sija', 'XII', 83, 85, 50, 86, 87);
+Query OK, 1 row affected (0.019 sec)
+
+MariaDB [db_tka2026]> insert into nilai_tka2026 (nis, nama, jurusan, kelas, b_indo, matematika, b_inggris, pilihan1, pilihan2) values(25012, 'Umar', 'dkv', 'XII', 89, 87, 88, 90, 91);
+Query OK, 1 row affected (0.018 sec)
+
+MariaDB [db_tka2026]> insert into nilai_tka2026 (nis, nama, jurusan, kelas, b_indo, matematika, b_inggris, pilihan1, pilihan2) values(25013, 'Rizky', 'tp', 'XIII', 80, 82, 81, 83, 84);
+Query OK, 1 row affected (0.020 sec)
+
+MariaDB [db_tka2026]> update nilai_tka2026 set kelas = 'XII' where id=22;
+Query OK, 1 row affected (0.057 sec)
+Rows matched: 1  Changed: 1  Warnings: 0 (KELASNYA WAWAN SALAH BU, JADI SAYA GANTI PAKAI QUAEY INI)😁😁😁
+
+MariaDB [db_tka2026]> select * from nilai_tka2026;
++----+-------+-------+---------+-------+--------+------------+-----------+----------+----------+
+| id | nis   | nama  | jurusan | kelas | b_indo | matematika | b_inggris | pilihan1 | pilihan2 |
++----+-------+-------+---------+-------+--------+------------+-----------+----------+----------+
+|  1 | 25001 | Andi  | rpl     | XII   |     78 |         85 |        80 |       82 |       79 |
+|  2 | 25002 | Budi  | tkj     | XII   |     70 |         75 |        72 |       74 |       71 |
+|  3 | 25003 | Joko  | sija    | XII   |     88 |         90 |        85 |       89 |       87 |
+|  4 | 25004 | Dewi  | dkv     | XII   |     92 |         78 |        88 |       90 |       91 |
+|  5 | 25005 | Eko   | tkp     | XII   |     65 |         70 |        68 |       67 |       69 |
+|  6 | 25006 | Fajar | dpib    | XII   |     73 |         76 |        74 |       75 |       72 |
+|  7 | 25007 | Gina  | tp      | XII   |     60 |         82 |        81 |       83 |       84 |
+|  8 | 25008 | Nia   | tflm    | XII   |     69 |         72 |        70 |       71 |       73 |
+|  9 | 25009 | Indah | toi     | XII   |     85 |         88 |        86 |       87 |       89 |
+| 10 | 24001 | Citra | tkr     | XIII  |     74 |         78 |        75 |       77 |       76 |
+| 11 | 24002 | Kiki  | rpl     | XIII  |     90 |         92 |        91 |       93 |       94 |
+| 12 | 24003 | Lina  | tkj     | XIII  |     82 |         80 |        83 |       90 |       78 |
+| 13 | 24004 | Mira  | sija    | XIII  |     76 |         79 |        78 |       77 |       80 |
+| 14 | 24005 | Hadi  | dkv     | XIII  |     88 |         85 |        87 |       86 |       89 |
+| 15 | 24006 | Oki   | tkp     | XIII  |     68 |         50 |        67 |       66 |       69 |
+| 16 | 24007 | Putri | dpib    | XIII  |     79 |         81 |        80 |       82 |       83 |
+| 17 | 24008 | Raka  | tp      | XIII  |     84 |         86 |        85 |       87 |       88 |
+| 18 | 24009 | Sinta | tflm    | XIII  |     71 |         73 |        72 |       74 |       75 |
+| 19 | 24010 | Toni  | toi     | XIII  |     77 |         79 |        78 |       80 |       81 |
+| 20 | 24011 | Zaky  | tkr     | XIII  |     69 |         70 |        68 |       71 |       72 |
+| 21 | 24012 | Vina  | rpl     | XIII  |     91 |         93 |        92 |       94 |       95 |
+| 22 | 25010 | Wawan | tkj     | XII   |     75 |         77 |        76 |       78 |       79 |
+| 23 | 25011 | Yani  | sija    | XII   |     83 |         85 |        50 |       86 |       87 |
+| 24 | 25012 | Umar  | dkv     | XII   |     89 |         87 |        88 |       90 |       91 |
+| 25 | 25013 | Rizky | tp      | XIII  |     80 |         82 |        81 |       83 |       84 |
++----+-------+-------+---------+-------+--------+------------+-----------+----------+----------+
+25 rows in set (0.001 sec)
+
+MariaDB [db_tka2026]> update nilai_tka2026 set nama = 'Yuni' where id=23;
+Query OK, 1 row affected (0.019 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+MariaDB [db_tka2026]> select * from nilai_tka2026;
++----+-------+-------+---------+-------+--------+------------+-----------+----------+----------+
+| id | nis   | nama  | jurusan | kelas | b_indo | matematika | b_inggris | pilihan1 | pilihan2 |
++----+-------+-------+---------+-------+--------+------------+-----------+----------+----------+
+|  1 | 25001 | Andi  | rpl     | XII   |     78 |         85 |        80 |       82 |       79 |
+|  2 | 25002 | Budi  | tkj     | XII   |     70 |         75 |        72 |       74 |       71 |
+|  3 | 25003 | Joko  | sija    | XII   |     88 |         90 |        85 |       89 |       87 |
+|  4 | 25004 | Dewi  | dkv     | XII   |     92 |         78 |        88 |       90 |       91 |
+|  5 | 25005 | Eko   | tkp     | XII   |     65 |         70 |        68 |       67 |       69 |
+|  6 | 25006 | Fajar | dpib    | XII   |     73 |         76 |        74 |       75 |       72 |
+|  7 | 25007 | Gina  | tp      | XII   |     60 |         82 |        81 |       83 |       84 |
+|  8 | 25008 | Nia   | tflm    | XII   |     69 |         72 |        70 |       71 |       73 |
+|  9 | 25009 | Indah | toi     | XII   |     85 |         88 |        86 |       87 |       89 |
+| 10 | 24001 | Citra | tkr     | XIII  |     74 |         78 |        75 |       77 |       76 |
+| 11 | 24002 | Kiki  | rpl     | XIII  |     90 |         92 |        91 |       93 |       94 |
+| 12 | 24003 | Lina  | tkj     | XIII  |     82 |         80 |        83 |       90 |       78 |
+| 13 | 24004 | Mira  | sija    | XIII  |     76 |         79 |        78 |       77 |       80 |
+| 14 | 24005 | Hadi  | dkv     | XIII  |     88 |         85 |        87 |       86 |       89 |
+| 15 | 24006 | Oki   | tkp     | XIII  |     68 |         50 |        67 |       66 |       69 |
+| 16 | 24007 | Putri | dpib    | XIII  |     79 |         81 |        80 |       82 |       83 |
+| 17 | 24008 | Raka  | tp      | XIII  |     84 |         86 |        85 |       87 |       88 |
+| 18 | 24009 | Sinta | tflm    | XIII  |     71 |         73 |        72 |       74 |       75 |
+| 19 | 24010 | Toni  | toi     | XIII  |     77 |         79 |        78 |       80 |       81 |
+| 20 | 24011 | Zaky  | tkr     | XIII  |     69 |         70 |        68 |       71 |       72 |
+| 21 | 24012 | Vina  | rpl     | XIII  |     91 |         93 |        92 |       94 |       95 |
+| 22 | 25010 | Wawan | tkj     | XII   |     75 |         77 |        76 |       78 |       79 |
+| 23 | 25011 | Yuni  | sija    | XII   |     83 |         85 |        50 |       86 |       87 |
+| 24 | 25012 | Umar  | dkv     | XII   |     89 |         87 |        88 |       90 |       91 |
+| 25 | 25013 | Rizky | tp      | XIII  |     80 |         82 |        81 |       83 |       84 |
++----+-------+-------+---------+-------+--------+------------+-----------+----------+----------+
+25 rows in set (0.001 sec)
+
+MariaDB [db_tka2026]> select min(matematika) as matematikaterkecil from nilai_tka2026;
++--------------------+
+| matematikaterkecil |
++--------------------+
+|                 50 |
++--------------------+
+1 row in set (0.001 sec)
+
+MariaDB [db_tka2026]> select nama, jurusan, kelas, b_inggris
+    -> from nilai_tka2026
+    -> where b_inggris = (select max(b_inggris) from nilai_tka2026);
++------+---------+-------+-----------+
+| nama | jurusan | kelas | b_inggris |
++------+---------+-------+-----------+
+| Vina | rpl     | XIII  |        92 |
++------+---------+-------+-----------+
+1 row in set (0.006 sec)
+
+MariaDB [db_tka2026]> select count(*) from nilai_tka2026;
++----------+
+| count(*) |
++----------+
+|       25 |
++----------+
+1 row in set (0.001 sec)
+
+MariaDB [db_tka2026]> select distinct jurusan from nilai_tka2026;
++---------+
+| jurusan |
++---------+
+| rpl     |
+| tkj     |
+| sija    |
+| dkv     |
+| tkp     |
+| dpib    |
+| tp      |
+| tflm    |
+| toi     |
+| tkr     |
++---------+
+10 rows in set (0.001 sec)
+
+MariaDB [db_tka2026]> select SUM(pilihan1) from nilai_tka2026;
++---------------+
+| SUM(pilihan1) |
++---------------+
+|          2032 |
++---------------+
+1 row in set (0.001 sec)
+
+MariaDB [db_tka2026]> select avg(b_indo) as avg_indo,
+    ->  avg(matematika) as avg_mtk,
+    ->  avg(b_inggris) as avg_inggris,
+    ->  avg(pilihan1) as avg_pilihan1,
+    ->
+    ->  avg(pilihan2) as avg_pilihan2 from nilai_tka2026;
++----------+---------+-------------+--------------+--------------+
+| avg_indo | avg_mtk | avg_inggris | avg_pilihan1 | avg_pilihan2 |
++----------+---------+-------------+--------------+--------------+
+|    78.24 |   79.72 |        78.2 |        81.28 |        81.44 |
++----------+---------+-------------+--------------+--------------+
+1 row in set (0.011 sec)
+
+MariaDB [db_tka2026]> select * from nilai_tka2026 where kelas = 'XII' and jurusan = 'rpl';
++----+-------+------+---------+-------+--------+------------+-----------+----------+----------+
+| id | nis   | nama | jurusan | kelas | b_indo | matematika | b_inggris | pilihan1 | pilihan2 |
++----+-------+------+---------+-------+--------+------------+-----------+----------+----------+
+|  1 | 25001 | Andi | rpl     | XII   |     78 |         85 |        80 |       82 |       79 |
++----+-------+------+---------+-------+--------+------------+-----------+----------+----------+
+1 row in set (0.034 sec)
+
+MariaDB [db_tka2026]> select nama, kelas, jurusan, b_indo from nilai_tka2026 where jurusan = 'tflm' or b_indo >=80;
++-------+-------+---------+--------+
+| nama  | kelas | jurusan | b_indo |
++-------+-------+---------+--------+
+| Joko  | XII   | sija    |     88 |
+| Dewi  | XII   | dkv     |     92 |
+| Nia   | XII   | tflm    |     69 |
+| Indah | XII   | toi     |     85 |
+| Kiki  | XIII  | rpl     |     90 |
+| Lina  | XIII  | tkj     |     82 |
+| Hadi  | XIII  | dkv     |     88 |
+| Raka  | XIII  | tp      |     84 |
+| Sinta | XIII  | tflm    |     71 |
+| Vina  | XIII  | rpl     |     91 |
+| Yuni  | XII   | sija    |     83 |
+| Umar  | XII   | dkv     |     89 |
+| Rizky | XIII  | tp      |     80 |
++-------+-------+---------+--------+
+13 rows in set (0.000 sec)
+
+MariaDB [db_tka2026]> select * from nilai_tka2026 where kelas = 'XIII';
++----+-------+-------+---------+-------+--------+------------+-----------+----------+----------+
+| id | nis   | nama  | jurusan | kelas | b_indo | matematika | b_inggris | pilihan1 | pilihan2 |
++----+-------+-------+---------+-------+--------+------------+-----------+----------+----------+
+| 10 | 24001 | Citra | tkr     | XIII  |     74 |         78 |        75 |       77 |       76 |
+| 11 | 24002 | Kiki  | rpl     | XIII  |     90 |         92 |        91 |       93 |       94 |
+| 12 | 24003 | Lina  | tkj     | XIII  |     82 |         80 |        83 |       90 |       78 |
+| 13 | 24004 | Mira  | sija    | XIII  |     76 |         79 |        78 |       77 |       80 |
+| 14 | 24005 | Hadi  | dkv     | XIII  |     88 |         85 |        87 |       86 |       89 |
+| 15 | 24006 | Oki   | tkp     | XIII  |     68 |         50 |        67 |       66 |       69 |
+| 16 | 24007 | Putri | dpib    | XIII  |     79 |         81 |        80 |       82 |       83 |
+| 17 | 24008 | Raka  | tp      | XIII  |     84 |         86 |        85 |       87 |       88 |
+| 18 | 24009 | Sinta | tflm    | XIII  |     71 |         73 |        72 |       74 |       75 |
+| 19 | 24010 | Toni  | toi     | XIII  |     77 |         79 |        78 |       80 |       81 |
+| 20 | 24011 | Zaky  | tkr     | XIII  |     69 |         70 |        68 |       71 |       72 |
+| 21 | 24012 | Vina  | rpl     | XIII  |     91 |         93 |        92 |       94 |       95 |
+| 25 | 25013 | Rizky | tp      | XIII  |     80 |         82 |        81 |       83 |       84 |
++----+-------+-------+---------+-------+--------+------------+-----------+----------+----------+
+13 rows in set (0.001 sec)
+
+MariaDB [db_tka2026]> select * from nilai_tka2026 where nama LIKE '%i';
++----+-------+-------+---------+-------+--------+------------+-----------+----------+----------+
+| id | nis   | nama  | jurusan | kelas | b_indo | matematika | b_inggris | pilihan1 | pilihan2 |
++----+-------+-------+---------+-------+--------+------------+-----------+----------+----------+
+|  1 | 25001 | Andi  | rpl     | XII   |     78 |         85 |        80 |       82 |       79 |
+|  2 | 25002 | Budi  | tkj     | XII   |     70 |         75 |        72 |       74 |       71 |
+|  4 | 25004 | Dewi  | dkv     | XII   |     92 |         78 |        88 |       90 |       91 |
+| 11 | 24002 | Kiki  | rpl     | XIII  |     90 |         92 |        91 |       93 |       94 |
+| 14 | 24005 | Hadi  | dkv     | XIII  |     88 |         85 |        87 |       86 |       89 |
+| 15 | 24006 | Oki   | tkp     | XIII  |     68 |         50 |        67 |       66 |       69 |
+| 16 | 24007 | Putri | dpib    | XIII  |     79 |         81 |        80 |       82 |       83 |
+| 19 | 24010 | Toni  | toi     | XIII  |     77 |         79 |        78 |       80 |       81 |
+| 23 | 25011 | Yuni  | sija    | XII   |     83 |         85 |        50 |       86 |       87 |
++----+-------+-------+---------+-------+--------+------------+-----------+----------+----------+
+9 rows in set (0.000 sec)
+
+MariaDB [db_tka2026]> select * from nilai_tka2026 order by id ASC limit 5;
++----+-------+------+---------+-------+--------+------------+-----------+----------+----------+
+| id | nis   | nama | jurusan | kelas | b_indo | matematika | b_inggris | pilihan1 | pilihan2 |
++----+-------+------+---------+-------+--------+------------+-----------+----------+----------+
+|  1 | 25001 | Andi | rpl     | XII   |     78 |         85 |        80 |       82 |       79 |
+|  2 | 25002 | Budi | tkj     | XII   |     70 |         75 |        72 |       74 |       71 |
+|  3 | 25003 | Joko | sija    | XII   |     88 |         90 |        85 |       89 |       87 |
+|  4 | 25004 | Dewi | dkv     | XII   |     92 |         78 |        88 |       90 |       91 |
+|  5 | 25005 | Eko  | tkp     | XII   |     65 |         70 |        68 |       67 |       69 |
++----+-------+------+---------+-------+--------+------------+-----------+----------+----------+
+5 rows in set (0.001 sec)
+
+MariaDB [db_tka2026]> select * from nilai_tka2026 order by id DESC limit 5;
++----+-------+-------+---------+-------+--------+------------+-----------+----------+----------+
+| id | nis   | nama  | jurusan | kelas | b_indo | matematika | b_inggris | pilihan1 | pilihan2 |
++----+-------+-------+---------+-------+--------+------------+-----------+----------+----------+
+| 25 | 25013 | Rizky | tp      | XIII  |     80 |         82 |        81 |       83 |       84 |
+| 24 | 25012 | Umar  | dkv     | XII   |     89 |         87 |        88 |       90 |       91 |
+| 23 | 25011 | Yuni  | sija    | XII   |     83 |         85 |        50 |       86 |       87 |
+| 22 | 25010 | Wawan | tkj     | XII   |     75 |         77 |        76 |       78 |       79 |
+| 21 | 24012 | Vina  | rpl     | XIII  |     91 |         93 |        92 |       94 |       95 |
++----+-------+-------+---------+-------+--------+------------+-----------+----------+----------+
+5 rows in set (0.000 sec)
+
+MariaDB [db_tka2026]> select nama, matematika from nilai_tka2026 order by matematika DESC limit 5;
++-------+------------+
+| nama  | matematika |
++-------+------------+
+| Vina  |         93 |
+| Kiki  |         92 |
+| Joko  |         90 |
+| Indah |         88 |
+| Umar  |         87 |
++-------+------------+
+5 rows in set (0.001 sec)
+
+MariaDB [db_tka2026]> select nama, (b_indo + matematika + b_inggris + pilihan1 + pilihan2) / 5 AS rata_rata from nilai_tka2026;
++-------+-----------+
+| nama  | rata_rata |
++-------+-----------+
+| Andi  |      80.8 |
+| Budi  |      72.4 |
+| Joko  |      87.8 |
+| Dewi  |      87.8 |
+| Eko   |      67.8 |
+| Fajar |        74 |
+| Gina  |        78 |
+| Nia   |        71 |
+| Indah |        87 |
+| Citra |        76 |
+| Kiki  |        92 |
+| Lina  |      82.6 |
+| Mira  |        78 |
+| Hadi  |        87 |
+| Oki   |        64 |
+| Putri |        81 |
+| Raka  |        86 |
+| Sinta |        73 |
+| Toni  |        79 |
+| Zaky  |        70 |
+| Vina  |        93 |
+| Wawan |        77 |
+| Yuni  |      78.2 |
+| Umar  |        89 |
+| Rizky |        82 |
++-------+-----------+
+25 rows in set (0.018 sec)
+
+MariaDB [db_tka2026]> select count(*) as jumlah_kelas_12 from nilai_tka2026 where kelas = 'XII';
++-----------------+
+| jumlah_kelas_12 |
++-----------------+
+|              12 |
++-----------------+
+1 row in set (0.001 sec)
+
+MariaDB [db_tka2026]> select count(*) as jumlah_kelas_12 from nilai_tka2026 where kelas = 'XIII';
++-----------------+
+| jumlah_kelas_12 |
++-----------------+
+|              13 |
++-----------------+
+1 row in set (0.001 sec)
+
+MariaDB [db_tka2026]> select nama, jurusan, kelas, (b_indo + matematika + b_inggris + pilihan1 + pilihan2) as Total from nilai_tka2026;
++-------+---------+-------+-------+
+| nama  | jurusan | kelas | Total |
++-------+---------+-------+-------+
+| Andi  | rpl     | XII   |   404 |
+| Budi  | tkj     | XII   |   362 |
+| Joko  | sija    | XII   |   439 |
+| Dewi  | dkv     | XII   |   439 |
+| Eko   | tkp     | XII   |   339 |
+| Fajar | dpib    | XII   |   370 |
+| Gina  | tp      | XII   |   390 |
+| Nia   | tflm    | XII   |   355 |
+| Indah | toi     | XII   |   435 |
+| Citra | tkr     | XIII  |   380 |
+| Kiki  | rpl     | XIII  |   460 |
+| Lina  | tkj     | XIII  |   413 |
+| Mira  | sija    | XIII  |   390 |
+| Hadi  | dkv     | XIII  |   435 |
+| Oki   | tkp     | XIII  |   320 |
+| Putri | dpib    | XIII  |   405 |
+| Raka  | tp      | XIII  |   430 |
+| Sinta | tflm    | XIII  |   365 |
+| Toni  | toi     | XIII  |   395 |
+| Zaky  | tkr     | XIII  |   350 |
+| Vina  | rpl     | XIII  |   465 |
+| Wawan | tkj     | XII   |   385 |
+| Yuni  | sija    | XII   |   391 |
+| Umar  | dkv     | XII   |   445 |
+| Rizky | tp      | XIII  |   410 |
++-------+---------+-------+-------+
+25 rows in set (0.000 sec)
+
+MariaDB [db_tka2026]>
