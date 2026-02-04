@@ -343,37 +343,37 @@ MariaDB [db_tka2026]> select nama, matematika from nilai_tka2026 order by matema
 +-------+------------+
 5 rows in set (0.001 sec)
 
-MariaDB [db_tka2026]> select nama, (b_indo + matematika + b_inggris + pilihan1 + pilihan2) / 5 AS rata_rata from nilai_tka2026;
-+-------+-----------+
-| nama  | rata_rata |
-+-------+-----------+
-| Andi  |      80.8 |
-| Budi  |      72.4 |
-| Joko  |      87.8 |
-| Dewi  |      87.8 |
-| Eko   |      67.8 |
-| Fajar |        74 |
-| Gina  |        78 |
-| Nia   |        71 |
-| Indah |        87 |
-| Citra |        76 |
-| Kiki  |        92 |
-| Lina  |      82.6 |
-| Mira  |        78 |
-| Hadi  |        87 |
-| Oki   |        64 |
-| Putri |        81 |
-| Raka  |        86 |
-| Sinta |        73 |
-| Toni  |        79 |
-| Zaky  |        70 |
-| Vina  |        93 |
-| Wawan |        77 |
-| Yuni  |      78.2 |
-| Umar  |        89 |
-| Rizky |        82 |
-+-------+-----------+
-25 rows in set (0.018 sec)
+MariaDB [db_tka2026]> select nama, b_indo, matematika, b_inggris,  pilihan1,  pilihan2, (b_indo + matematika + b_inggris + pilihan1 + pilihan2) / 5 AS rata_rata from nilai_tka2026;
++-------+--------+------------+-----------+----------+----------+-----------+
+| nama  | b_indo | matematika | b_inggris | pilihan1 | pilihan2 | rata_rata |
++-------+--------+------------+-----------+----------+----------+-----------+
+| Andi  |     78 |         85 |        80 |       82 |       79 |      80.8 |
+| Budi  |     70 |         75 |        72 |       74 |       71 |      72.4 |
+| Joko  |     88 |         90 |        85 |       89 |       87 |      87.8 |
+| Dewi  |     92 |         78 |        88 |       90 |       91 |      87.8 |
+| Eko   |     65 |         70 |        68 |       67 |       69 |      67.8 |
+| Fajar |     73 |         76 |        74 |       75 |       72 |        74 |
+| Gina  |     60 |         82 |        81 |       83 |       84 |        78 |
+| Nia   |     69 |         72 |        70 |       71 |       73 |        71 |
+| Indah |     85 |         88 |        86 |       87 |       89 |        87 |
+| Citra |     74 |         78 |        75 |       77 |       76 |        76 |
+| Kiki  |     90 |         92 |        91 |       93 |       94 |        92 |
+| Lina  |     82 |         80 |        83 |       90 |       78 |      82.6 |
+| Mira  |     76 |         79 |        78 |       77 |       80 |        78 |
+| Hadi  |     88 |         85 |        87 |       86 |       89 |        87 |
+| Oki   |     68 |         50 |        67 |       66 |       69 |        64 |
+| Putri |     79 |         81 |        80 |       82 |       83 |        81 |
+| Raka  |     84 |         86 |        85 |       87 |       88 |        86 |
+| Sinta |     71 |         73 |        72 |       74 |       75 |        73 |
+| Toni  |     77 |         79 |        78 |       80 |       81 |        79 |
+| Zaky  |     69 |         70 |        68 |       71 |       72 |        70 |
+| Vina  |     91 |         93 |        92 |       94 |       95 |        93 |
+| Wawan |     75 |         77 |        76 |       78 |       79 |        77 |
+| Yuni  |     83 |         85 |        50 |       86 |       87 |      78.2 |
+| Umar  |     89 |         87 |        88 |       90 |       91 |        89 |
+| Rizky |     80 |         82 |        81 |       83 |       84 |        82 |
++-------+--------+------------+-----------+----------+----------+-----------+
+25 rows in set (0.002 sec)
 
 MariaDB [db_tka2026]> select count(*) as jumlah_kelas_12 from nilai_tka2026 where kelas = 'XII';
 +-----------------+
@@ -422,5 +422,6 @@ MariaDB [db_tka2026]> select nama, jurusan, kelas, (b_indo + matematika + b_ingg
 | Rizky | tp      | XIII  |   410 |
 +-------+---------+-------+-------+
 25 rows in set (0.000 sec)
+
 
 MariaDB [db_tka2026]>
